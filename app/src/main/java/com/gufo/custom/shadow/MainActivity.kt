@@ -101,7 +101,12 @@ class MainActivity : ComponentActivity() {
 
                                 Box(
                                     modifier = Modifier
-                                        .shadow(borderRadius = 35.dp)
+                                        .shadow(
+                                            1.dp,
+                                            shape = RoundedCornerShape(35.dp),
+                                            ambientColor = Color.Black,
+                                            spotColor = Color.Black
+                                        )
                                         .clip(RoundedCornerShape(35.dp))
                                         .size(130.dp)
                                         .background(MaterialTheme.colorScheme.background)
